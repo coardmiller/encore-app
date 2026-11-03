@@ -22,7 +22,7 @@
 .field-journal .journal-download strong{display:block;font-size:23px;line-height:1.15;font-weight:550;letter-spacing:-.03em}
 .field-journal .hero-disclosure{font-size:12px;color:var(--muted);margin:14px 0 0}
 .field-journal .phone-composition{margin:0;min-width:0;container-type:inline-size}
-.field-journal .phone-stage{height:760px;width:100%;max-width:540px;margin-inline:auto;position:relative;isolation:isolate;--ss-well:#0a0807;--ss-phone-photo-light:url('/encore-app/product/iphone-18-pro-black.webp')}
+.field-journal .phone-stage{height:760px;width:100%;max-width:540px;margin-inline:auto;position:relative;isolation:isolate;--ss-well:#0a0807;--ss-phone-photo-light:url('/product/iphone-18-pro-black.webp')}
 .field-journal .phone-spots{position:absolute;right:20px;top:8px;z-index:0}
 .field-journal .phone-journal{position:absolute;left:20px;top:112px;z-index:1}
 .field-journal .native-screen{position:absolute;inset:0;width:402px;height:874px;display:block;object-fit:contain}
