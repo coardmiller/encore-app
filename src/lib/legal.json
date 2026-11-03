@@ -1,0 +1,104 @@
+{
+ "privacy": [
+  "Encore privacy policy",
+  [
+   {
+    "p": "Encore is a personal concert journal. You can use it without creating an Encore account. Contact: coardmiller@gmail.com."
+   },
+   {
+    "h": "Your journal and iCloud"
+   },
+   {
+    "p": "Encore saves concerts, notes, selected photos and videos on your device. When iCloud sync is enabled and available, journal data is synchronized through your Apple account. The app's iCloud status explains whether the current journal is syncing or local only. Apple operates iCloud under its own privacy terms. Deleting a concert removes its journal record and, when syncing, propagates that change to other devices. It does not delete the original from your Photos library."
+   },
+   {
+    "h": "Photos, location and music"
+   },
+   {
+    "p": "Encore requests photo-library access for finding and adding concert memories. You can also select individual photos with Apple's picker. Location permission helps place venues on your concert map. Motion access supports optional visual effects. You can change permissions in device Settings."
+   },
+   {
+    "p": "Artist, concert, venue and recording lookups send the terms needed for that search to the relevant catalog or music service. Depending on the feature, these include Apple services, Spotify, setlist.fm and Ticketmaster when configured. Opening a music link sends the artist or song to the service you choose. Connecting Apple Music requires your authorization and may require a separate music subscription. Those providers process their requests under their own policies. Encore does not send your journal or photo library to RevenueCat."
+   },
+   {
+    "h": "Purchases and subscription analytics"
+   },
+   {
+    "p": "Apple processes payments and manages billing for Encore Pro. Encore does not receive your payment-card information. RevenueCat receives purchase history, an anonymous app identifier, app and device information, and paywall impressions to report subscription status and compare subscription offers. Encore does not attach your name, email, iCloud identity, concert titles, photos or notes to these records. Automatic device-identifier collection and optional SDK diagnostics are disabled. We do not use this integration to track you across other companies' apps or websites for advertising. RevenueCat's policy is available at https://www.revenuecat.com/privacy/."
+   },
+   {
+    "p": "Encore also keeps aggregate onboarding and purchase-action counts on the device. These local counts contain no journal content and are not sent to a server. Ending a subscription does not remove saved concerts; they remain available to read, edit and export. Cancel or manage billing through your Apple subscriptions."
+   },
+   {
+    "h": "Sharing, support and your choices"
+   },
+   {
+    "p": "Exports and sharing are initiated by you. Review what you send and the destination before sharing. Feedback includes the app and operating-system version, with no journal content attached automatically. If you email support, your message and email address are used to respond to your request."
+   },
+   {
+    "p": "You can delete individual concerts in the app, export a backup, manage permissions in device Settings and manage your subscription through Apple. Removing the app deletes local app data; it does not itself cancel an Apple subscription or remove copies already synchronized to iCloud or exported elsewhere. Contact support about subscription-analytics records and privacy requests. We may need transaction details to locate an anonymous purchase record; do not send card details or Apple passwords."
+   },
+   {
+    "p": "We retain subscription records as needed to support access, prevent fraud and meet applicable obligations. Contact us for questions about retention or deletion. Any material changes to this policy will be reflected in the published policy and its updated date."
+   }
+  ]
+ ],
+ "support": [
+  "Encore support",
+  [
+   {
+    "p": "Encore helps you keep concert photos, videos, notes, setlists and memories together. For help, email coardmiller@gmail.com. Include your Encore version, iOS version and a short description of the problem. Only attach journal content you want to share. Never send your Apple password or payment-card details."
+   },
+   {
+    "h": "Encore Pro"
+   },
+   {
+    "p": "Encore Pro offers monthly and annual subscriptions. Prices and any eligible annual trial appear in the app and Apple's confirmation sheet. Manage or cancel through your Apple subscriptions. Deleting Encore does not cancel a subscription."
+   },
+   {
+    "p": "If a purchase is missing, open Encore Settings and choose Restore purchases while using the Apple account that purchased it. If it is still missing, contact support with the approximate purchase date and the product shown on your Apple receipt. Apple handles billing and refund requests through https://reportaproblem.apple.com/."
+   },
+   {
+    "p": "Your saved concerts remain available to read, edit and export if a subscription ends. Apple Music playback requires its own subscription."
+   },
+   {
+    "h": "Journal and iCloud"
+   },
+   {
+    "p": "Check Encore Settings for the current iCloud sync status. Keep a backup before removing the app or replacing a device. Deleting a concert can synchronize that deletion to your other devices. It does not remove the original photo from Photos."
+   },
+   {
+    "h": "Photos, setlists and recordings"
+   },
+   {
+    "p": "Manage photo and music permissions in device Settings. Concert and setlist coverage varies by provider; a particular show or recording may not be available. You can still enter your own concert details and memories."
+   }
+  ]
+ ],
+ "terms": [
+  "Terms of use",
+  [
+   {
+    "p": "Encore is licensed to you under Apple's Standard Licensed Application End User License Agreement: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+   },
+   {
+    "h": "Encore Pro subscriptions"
+   },
+   {
+    "p": "Encore Pro is available as a monthly or annual auto-renewing subscription. Payment is charged to your Apple account at confirmation of purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in your Apple account settings. Any unused portion of a free trial is forfeited when you purchase a subscription. Your saved concerts remain available to read, edit and export if a subscription ends."
+   },
+   {
+    "h": "Concert information"
+   },
+   {
+    "p": "Concert, setlist and venue information comes from third-party providers, including setlist.fm and Ticketmaster, and may be incomplete or inaccurate. Music playback uses Apple Music or Spotify under their own terms and subscriptions."
+   },
+   {
+    "h": "Contact"
+   },
+   {
+    "p": "Questions about these terms: coardmiller@gmail.com."
+   }
+  ]
+ ]
+}
