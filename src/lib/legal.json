@@ -3,7 +3,7 @@
   "Shows privacy policy",
   [
    {
-    "p": "Shows is a personal concert journal. You can use it without creating an Shows account. Contact: coard@freespaceapps.com."
+    "p": "Shows is a personal concert journal. You can use it without creating a Shows account. Contact: coard@freespaceapps.com."
    },
    {
     "h": "Your journal and iCloud"
@@ -71,7 +71,7 @@
     "h": "Photos, setlists and recordings"
    },
    {
-    "p": "Manage photo and music permissions in device Settings. Concert and setlist coverage varies by provider; a particular show or recording may not be available. You can still enter your own concert details and memories."
+    "p": "Manage photo and music permissions in device Settings. Concert and setlist coverage varies by provider; a particular concert or recording may not be available. You can still enter your own concert details and memories."
    }
   ]
  ],
