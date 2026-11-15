@@ -14,11 +14,11 @@ export function LegalPage({ kind, updated }: { kind: "privacy" | "support" | "te
   const [title, blocks] = (legal as unknown as Record<string, [string, Block[]]>)[kind];
   return <main style={{ minHeight: "100vh", background: "radial-gradient(900px 500px at 85% -10%, #3a0b07 0%, var(--encore-bg) 60%)" }}>
     <nav className="max-w-[760px] mx-auto px-6 pt-6 pb-2 flex items-center justify-between">
-      <a href={asset("/")} className="flex items-center gap-2.5"><img src={asset("/app-icon.png")} alt="" className="w-8 h-8 rounded-[9px]"/><span className="font-semibold text-[15px]">Encore</span></a>
+      <a href={asset("/")} className="flex items-center gap-2.5"><img src={asset("/app-icon.png")} alt="" className="w-9 h-9"/><span className="font-semibold text-[15px]">Shows</span></a>
       <div className="flex gap-5 text-[13px]" style={{ color: "var(--encore-muted)" }}><a href={asset("/support/")}>Support</a><a href={asset("/privacy/")}>Privacy</a><a href={asset("/terms/")}>Terms</a></div>
     </nav>
     <article className="max-w-[760px] mx-auto px-6 py-12">
-      <h1 className="text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-[1.05] mb-2" style={{ letterSpacing: "-.03em" }}>{title.replace(/^Encore /, "")}</h1>
+      <h1 className="text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-[1.05] mb-2" style={{ letterSpacing: "-.03em" }}>{title.replace(/^Shows /, "")}</h1>
       {updated && <p className="text-[13px] mb-8" style={{ color: "var(--encore-muted)" }}>Effective {updated}</p>}
       <div className="space-y-5 text-[16px] leading-[1.75]">
         {blocks.map((b, i) => b.h
