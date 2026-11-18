@@ -1,7 +1,7 @@
 # Shows website
 
 Public marketing, support, privacy and terms pages for Shows – Concert Tracker (iOS; the app was called Encore until November 2026).
-Static Next.js export deployed on Vercel (project `encore`).
+Static Next.js export deployed on Vercel (project `encore-concerts`) at https://getshows.app. The older https://encore-concerts-lac.vercel.app address still works and older app builds link to it.
 
 Adapted from the FishLogger website. Legal and support text mirrors `docs/launch/` in the Encore app repo.
 Screenshots are native simulator captures using the app's sample concerts. The gallery row (`public/gallery/`) is the App Store screenshot set, frames 2 to 7; replace both when the store set changes.
