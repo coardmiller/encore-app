@@ -12,13 +12,13 @@
     "p": "Shows saves concerts, notes, selected photos and videos on your device. When iCloud sync is enabled and available, journal data is synchronized through your Apple account. The app's iCloud status explains whether the current journal is syncing or local only. Apple operates iCloud under its own privacy terms. Deleting a concert removes its journal record and, when syncing, propagates that change to other devices. It does not delete the original from your Photos library."
    },
    {
-    "h": "Photos, location and music"
+    "h": "Photos, home ZIP code and music"
    },
    {
-    "p": "Shows requests photo-library access for finding and adding concert memories. You can also select individual photos with Apple's picker. Location permission helps place venues on your concert map. Motion access supports optional visual effects. Reminders are optional notifications scheduled on your device; they do not include artists, places, notes or photos. You can change permissions in device Settings."
+    "p": "Shows requests photo-library access to find photos and videos from each concert, so you can add the ones you choose. You can also select individual photos with Apple's picker. Shows does not request your device location. If you enter a home ZIP or postal code for travel miles, Shows sends that code to Apple's map service to find its approximate location and keeps the result in your journal settings. Motion access supports optional visual effects. Reminders are optional notifications scheduled on your device; they do not include artists, places, notes or photos. You can change permissions in device Settings."
    },
    {
-    "p": "Artist, concert, venue and recording lookups send the terms needed for that search to the relevant catalog or music service. Depending on the feature, these include Apple services, Spotify, setlist.fm and Ticketmaster when configured. Opening a music link sends the artist or song to the service you choose. Connecting Apple Music requires your authorization and may require a separate music subscription. Those providers process their requests under their own policies. Shows does not send your journal or photo library to RevenueCat."
+    "p": "Artist, concert, venue and recording lookups send the terms needed for that search to the relevant catalog or music service. Depending on the feature, these include Apple services, Spotify, setlist.fm, MusicBrainz, Deezer and Ticketmaster when configured. Opening a music link sends the artist or song to the service you choose. Connecting Apple Music requires your authorization and may require a separate music subscription. Those providers process their requests under their own policies. Shows does not send your journal or photo library to RevenueCat."
    },
    {
     "h": "Purchases and subscription analytics"
@@ -91,7 +91,7 @@
     "h": "Concert information"
    },
    {
-    "p": "Concert, setlist and venue information comes from third-party providers, including setlist.fm and Ticketmaster, and may be incomplete or inaccurate. Music playback uses Apple Music or Spotify under their own terms and subscriptions."
+    "p": "Concert, setlist and venue information comes from third-party providers, including setlist.fm, Ticketmaster, MusicBrainz and Deezer, and may be incomplete or inaccurate. Music playback uses Apple Music or Spotify under their own terms and subscriptions."
    },
    {
     "h": "Contact"

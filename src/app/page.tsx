@@ -16,6 +16,15 @@ function BenefitIcon({ kind }: { kind: "save" | "photos" | "setlist" | "story" |
   </svg>;
 }
 
+const GALLERY = [
+  ["02-home", "Your concerts, as photos: the Concerts list with Zach Bryan and The Lumineers"],
+  ["03-pins", "Earn a pin for every milestone: the pin collection, 7 of 14 earned"],
+  ["04-add", "Add a concert in one sentence: Noah Kahan at Fenway Park with its setlist found"],
+  ["05-keep", "Keep the photos and the setlist: a Zach Bryan concert with a 23-song setlist"],
+  ["06-stats", "See who you’ve seen most: Stats with the top artist, 12 concerts and 9 cities"],
+  ["07-share", "Share a concert as a card: three share cards made from concert photos"],
+];
+
 export default function Home() {
   return <div className="field-journal">
     <a href="#journal-main" className="journal-skip">Skip to content</a>
@@ -28,15 +37,15 @@ export default function Home() {
         <div className="hero-copy">
           <img className="hero-icon" src={asset("/app-icon.png")} width="124" height="124" alt="Shows app icon"/>
           <p className="eyebrow">Shows for iPhone</p>
-          <h1 id="hero-title">Every concert<br/><span>you’ve seen.</span></h1>
-          <p className="hero-description">Save the photos, videos, setlist and memories from each concert. Watch your artists, venues and cities add up over the years.</p>
+          <h1 id="hero-title">Every concert<br/><span>you’ve been to.</span></h1>
+          <p className="hero-description">Save the photos, videos, setlist and memories from each concert. See who you’ve seen most, and earn a pin for every milestone.</p>
           <Download/>
           <p className="hero-disclosure">Free to download. Shows Pro is needed to keep adding concerts.</p>
         </div>
         <figure className="phone-composition" aria-label="Concert stats and a saved concert on two iPhones">
           <div className="phone-stage ss-stage" data-theme="dark" data-fidelity="realistic">
-            <Phone width={270} frame="photo" status={false} island={false} className="phone-spots" capture={<img className="native-screen" src={asset("/product/stats.jpg")} width="1206" height="2620" alt="The Stats screen: 12 concerts in 9 cities, top artist and a map" fetchPriority="high"/>}/>
-            <Phone width={288} frame="photo" status={false} island={false} className="phone-journal" capture={<img className="native-screen" src={asset("/product/detail.jpg")} width="1206" height="2620" alt="A saved Khruangbin concert with a medal, photos and a note" fetchPriority="high"/>}/>
+            <Phone width={270} frame="photo" status={false} island={false} className="phone-spots" capture={<img className="native-screen" src={asset("/product/stats.jpg")} width="1206" height="2622" alt="The Stats screen: 12 concerts in 9 cities, top artist and a map" fetchPriority="high"/>}/>
+            <Phone width={288} frame="photo" status={false} island={false} className="phone-journal" capture={<img className="native-screen" src={asset("/product/detail.jpg")} width="1206" height="2622" alt="A saved Zach Bryan concert with two pins and photos" fetchPriority="high"/>}/>
           </div>
           <figcaption>Shown with sample concerts.</figcaption>
         </figure>
@@ -44,13 +53,19 @@ export default function Home() {
       <section id="the-journal" className="journal-benefits section-wrap" aria-labelledby="benefits-title">
         <div className="benefits-heading"><p className="eyebrow">Your live music history</p><h2 id="benefits-title">Keep the concert, not just the ticket.</h2><p>Your camera roll has the photos. Shows keeps them with the concert they came from.</p></div>
         <div className="benefit-grid">
-          <article><BenefitIcon kind="save"/><h3>Log a concert in seconds</h3><p>Find a past or upcoming concert by artist, city or venue, or enter it yourself. Add who you went with.</p></article>
+          <article><BenefitIcon kind="save"/><h3>Add a concert in one sentence</h3><p>Type who you saw, where and when, and Shows finds the concert. Or enter the details yourself.</p></article>
           <article><BenefitIcon kind="photos"/><h3>Photos and videos from the concert</h3><p>Pick from what you shot that day, and write down what you want to remember.</p></article>
           <article><BenefitIcon kind="setlist"/><h3>Keep the setlist</h3><p>Bring in available setlists from setlist.fm or add songs yourself. Play the songs back with Apple Music or find them on Spotify.</p></article>
-          <article><BenefitIcon kind="story"/><h3>See your concert stats</h3><p>Your most-seen artists, venues, cities and years, a map of where you’ve been, and medals as your history grows.</p></article>
-          <article><BenefitIcon kind="share"/><h3>Share the concert</h3><p>Turn a saved concert into a card with your photo, the date and the venue. Choose Blur, Ticket, Round or Arch.</p></article>
+          <article><BenefitIcon kind="story"/><h3>See who you’ve seen most</h3><p>Your most-seen artists, venues, cities and years, and a map of where you’ve been. Earn a pin for every milestone.</p></article>
+          <article><BenefitIcon kind="share"/><h3>Share the concert</h3><p>Turn a saved concert into a card with your photo, the date and the venue, and send it anywhere.</p></article>
           <article><BenefitIcon kind="remind"/><h3>Look back</h3><p>See the concerts you went to on this day in past years. Turn on a reminder for anniversaries or for the morning after a concert.</p></article>
         </div>
+      </section>
+      <section className="journal-gallery" aria-labelledby="gallery-title">
+        <div className="section-wrap"><p className="eyebrow">Inside Shows</p><h2 id="gallery-title">From the first concert to the fiftieth.</h2></div>
+        <ul className="gallery-row" tabIndex={0} aria-label="Screens from Shows">
+          {GALLERY.map(([file, alt]) => <li key={file}><img src={asset(`/gallery/${file}.jpg`)} width="720" height="1564" alt={alt} loading="lazy"/></li>)}
+        </ul>
       </section>
       <section className="journal-keeping section-wrap" aria-labelledby="keeping-title">
         <h2 id="keeping-title">Your journal stays yours.</h2>
@@ -58,7 +73,7 @@ export default function Home() {
         <div><h3>iCloud sync</h3><p>Your concerts sync through your own iCloud.</p></div>
         <div><h3>Backup export</h3><p>Export your journal whenever you want.</p></div>
       </section>
-      <section className="journal-close section-wrap" aria-label="Get Shows"><img src={asset("/app-icon.png")} width="112" height="112" alt=""/><h2>Start with the last concert you saw.</h2><Download/><p>Free to download. Shows Pro (monthly, annual or lifetime) is needed to keep adding concerts.<br/>Current prices and any eligible trial are shown in the app.</p></section>
+      <section className="journal-close section-wrap" aria-label="Get Shows"><img src={asset("/app-icon.png")} width="112" height="112" alt=""/><h2>Start with the last concert you saw.</h2><Download/><p>Free to download. Shows Pro (monthly, annual or lifetime) is needed to keep adding concerts.{" "}<br/>Current prices and any eligible trial are shown in the app.</p></section>
     </main>
     <footer className="journal-footer section-wrap"><a className="footer-wordmark" href={asset("/")}>Shows</a><nav aria-label="Footer navigation"><a href={asset("/support/")}>Support</a><a href={asset("/privacy/")}>Privacy</a><a href={asset("/terms/")}>Terms</a></nav><small>© {new Date().getFullYear()} Coard Miller</small></footer>
   </div>;

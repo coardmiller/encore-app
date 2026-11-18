@@ -18,7 +18,7 @@ export function LegalPage({ kind, updated }: { kind: "privacy" | "support" | "te
       <div className="flex gap-5 text-[13px]" style={{ color: "var(--encore-muted)" }}><a href={asset("/support/")}>Support</a><a href={asset("/privacy/")}>Privacy</a><a href={asset("/terms/")}>Terms</a></div>
     </nav>
     <article className="max-w-[760px] mx-auto px-6 py-12">
-      <h1 className="text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-[1.05] mb-2" style={{ letterSpacing: "-.03em" }}>{title.replace(/^Shows /, "")}</h1>
+      <h1 className="text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-[1.05] mb-2" style={{ letterSpacing: "-.03em" }}>{title.replace(/^Shows (.)/, (_, c: string) => c.toUpperCase())}</h1>
       {updated && <p className="text-[13px] mb-8" style={{ color: "var(--encore-muted)" }}>Effective {updated}</p>}
       <div className="space-y-5 text-[16px] leading-[1.75]">
         {blocks.map((b, i) => b.h
